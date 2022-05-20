@@ -13,7 +13,6 @@ const startTime = () => {
   let weekDays = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ];
   let months = [ "January", "February", "March", "April", "May", "June", "July", "September", "October", "November", "December" ];
   date.innerHTML = `${weekDays[weekDay]} | ${day}/${months[month]}/${year}`
-  //document.getElementById('cal').innerHTML = weekDays[weekDay] + ", " + daySuf + " " + months[month] + " " + year;
   setTimeout(startTime, 1000);
 }
 
@@ -21,9 +20,7 @@ startTime()
 
 
 const search = () => {
-  const input = inputField.value;
-  const final = input.replace(" ", "+");
-  window.location.href = "https://www.google.com/search?q=" + final;
+  window.location.href = "https://www.google.com/search?q=" + encodeURI(input.value);
 };
 
 inputField.addEventListener("keypress", (e) => {

@@ -20,7 +20,7 @@ startTime()
 
 
 const search = () => {
-  window.location.href = "https://www.google.com/search?q=" + encodeURI(input.value);
+  window.location.href = "https://www.google.com/search?q=" + encodeURI(inputField.value);
 };
 
 inputField.addEventListener("keypress", (e) => {

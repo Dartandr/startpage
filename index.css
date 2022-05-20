@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "SourceCodeProRegular";
+  src: url("SourceCodePro-Regular.ttf");
+}
+
+@font-face {
+  font-family: "SourceCodeProSemiBold";
+  src: url("SourceCodePro-SemiBold.ttf");
+}
+
+body{
+  background-color: #454F57;
+  font-family: 'SourceCodeProSemiBold';
+  color: #DCD8CE;
+}
+
+a{
+  font-family: 'SourceCodeProRegular';
+  color: #DCD8CE;
+  text-decoration: none;
+}
+
+.wrapper{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 45%;
+  width: 907px;
+}
+
+.time-block{
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.time{
+  margin-bottom: 20px;
+}
+
+.main{
+  position: relative;
+  width: 900px;
+  height: 350px;
+}
+.main-container{
+  width: 900px;
+  height: 350px;
+  background-color: #26282D;
+  border-radius: 10px;
+  z-index: 2;
+  position: absolute;
+}
+
+.main-shadow{
+  position: absolute;
+  width: 900px;
+  z-index: 1;
+  height: 350px;
+  background-color: #26282D;
+  border-radius: 10px;
+  background-color: #576664;
+  top: 7px;
+  left: 7px;
+}
+
+.main img{
+  height: 350px;
+  width: 355px;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+}
+
+.spacer{
+  position: absolute;
+  height: 350px;
+  width: 3px;
+  background-color:#5E706D;
+  top: 0;
+  left: 355px;
+}
+
+.main-content{
+  position: absolute;
+  width: 542px;
+  height: 350px;
+  top: 0;
+  left: 358px;
+}
+
+.welcome{
+  text-align: center;
+  font-size: 32px;
+  margin: 20px 0;
+}
+
+.welcome span{
+  color: #6B8F8D;
+}
+
+.links{
+  display: flex;
+  justify-content: space-between;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+  width: 271px;
+  padding-left: 20px;
+  font-size: 22px;
+  gap: 20px;
+}
+
+.cat {
+  position: absolute;
+  top: 175px;
+  left: 320px;
+	font-size: 24px;
+	text-align: center;
+}
+
+.search{
+  position: relative;
+  margin: 25px auto;
+  width: 471px;
+}
+
+.search input{
+  position: absolute;
+  width: 424px;
+  height: 40px;
+  background-color: #26282D;
+  border: none;
+  border-radius: 20px;
+  padding: 0 20px;
+  font-size: 24px;
+  font-family: "SourceCodeProSemiBold";
+  color: #DCD8CE;
+  z-index: 2;
+  
+}
+
+input:focus{
+  outline: none;
+}
+
+input::placeholder {
+  color: #8C887E;
+}
+
+.search-shadow{
+  z-index: 1;
+  width: 464px;
+  height: 40px;
+  position: absolute;
+  background-color:#5E706D;
+  top: 7px;
+  left: 7px;
+  border-radius: 20px;
+}
+
+.search img{
+  z-index: 3;
+  position: absolute;
+  right: 27px;
+  top: 12px;
+  cursor: pointer;
+}

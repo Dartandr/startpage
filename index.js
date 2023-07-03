@@ -30,3 +30,5 @@ inputField.addEventListener("keypress", (e) => {
 });
 
 searchButton.addEventListener("click", search);
+
+inputField.focus();
